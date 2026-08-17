@@ -22,4 +22,4 @@ for chunk in tqdm(pd.read_csv(arquivo_gigante, chunksize=chunk_size, low_memory=
         else:
             df_filtrado.to_csv(arquivo_saida, index=False, mode='a', header=False, encoding='utf-8')
 
-print(f"\n✅ Concluído! {total:,} avaliações salvas em '{arquivo_saida}'.")
+print(f"\n Concluído! {total:,} avaliações salvas em '{arquivo_saida}'.")
